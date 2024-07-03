@@ -1,8 +1,8 @@
 [tool.commitizen]
-version = "0.0.0"
+version = "0.0.1"
 update_changelog_on_bump = true
 tag_format = "v$version"
-changelog_start_rev = "v0.0"
+changelog_start_rev = "v0.0.1"
 changelog_merge_prerelease = true
 annotated_tag = true
 bump_message = "change: Update version to $new_version"

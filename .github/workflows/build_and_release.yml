@@ -65,7 +65,7 @@ jobs:
         uses: actions/download-artifact@v4
       - name: Create release
         id: create_release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -73,4 +73,5 @@ jobs:
           name: Version ${{ steps.get_version.outputs.VERSION }}
           draft: true
           prerelease: false
-          files: esp*.json
+          fail_on_unmatched_files: true
+          files: artifact/esp*.json
