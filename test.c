@@ -3,7 +3,7 @@
 int get_numder(void)
 {
     // this uis a nice function
-    return 1;
+    return 2;
 }
 
 void main(void)
